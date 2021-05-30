@@ -2,6 +2,7 @@
 .dark-mode-toggle {
   cursor: pointer;
   position: absolute;
+  display: none;
   box-shadow: none;
   top: 10px;
   right: 10px;

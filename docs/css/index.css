@@ -129,7 +129,6 @@ body.dark {
 body {
   background: var(--background-primary);
   color: var(--font-color-primary);
-  padding: 100px 100px;
   font-family: var(--font-family-primary);
   font-family: "PSBold";
 }
@@ -371,9 +370,10 @@ body.dark .github-corner {
 }
 
 @media (max-width: 768px) {
-  body {
-    padding: 100px 5px;
+  body{
+    padding: 5px;
   }
+
   h1 {
     margin-top: 20px;
     font-size: 3rem;
@@ -386,7 +386,7 @@ body.dark .github-corner {
     flex-direction: column;
   }
   .customization-col {
-    padding: 100px 5px !important;
+    padding: 10px 5px !important;
   }
   .page-container {
     width: 100%;
@@ -446,7 +446,7 @@ input[type='file']::-webkit-file-upload-button {
   display: none;
 }
 input[type='file']::before {
-  content: 'Pick a Handwriting.....';
+  content: 'Pick Handwriting....';
   display: inline-block;
   background-color: var(--background-primary);
   white-space: nowrap;

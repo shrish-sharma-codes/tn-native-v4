@@ -1,19 +1,32 @@
 /* CSS Variables */
 body {
-  --background-primary: linear-gradient(to bottom, #e55d87, #5fc3e4);
+  /* --background-primary: linear-gradient(to bottom, #e55d87, #5fc3e4);
   --font-color-primary: #fff;
   --elevation-background: #5fc3e4;
-  --link-color: #006eb8;
+  --link-color: #006eb8; */
+  --background-primary: linear-gradient(to bottom, #654ea3, #eaafc8); 
+  --font-color-primary: #fff;
+  --elevation-background: #454545;
+  --link-color: #09f;
+
   --font-family-primary: 'Roboto', cursive;
   --handwriting-font: 'Homemade Apple', cursive;
   --primary-color: #1a73e8;
   --ink-color: #000f55;
-  --label-color: #fff;
+  
+  /* --label-color: #fff;
   --field-borders: black;
   --primary-button-bg: #5fc3e4;
   --primary-button-color: #eee;
   --box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  --toggle-bg: #abd7eb;
+  --toggle-bg: #abd7eb; */
+
+  --label-color: #fff;
+  --field-borders: white;
+  --primary-button-bg: linear-gradient(to right, #695997, #654ea3);
+  --primary-button-color: #fff;
+  --box-shadow: 0 8px 32px 0 rgba(241, 203, 203, 0.267);
+  --toggle-bg: #454545;
 }
 body.dark {
   --background-primary: linear-gradient(to bottom, #654ea3, #eaafc8); 

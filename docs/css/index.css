@@ -348,7 +348,7 @@ body.dark .github-corner {
   width: 100%;
   padding: 30px;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: auto;
   border: 1px solid var(--elevation-background);
 }
 .output .close-button {

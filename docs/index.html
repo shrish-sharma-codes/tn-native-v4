@@ -379,6 +379,7 @@
           let text = document.getElementById('note').textContent;
           let history = document.getElementById('history');
           history.innerHTML = text;
+          Android.sendData(text);
         }
     </script>
 

@@ -219,6 +219,70 @@
                 </div>
               </fieldset>
 
+              <!-- Letter spacing, Paper Margin, Paper Lines, Paper Curvature -->
+              <fieldset class="glass-ui">
+                <legend>Margin & Line Options</legend>
+
+                <div class="category-grid">
+                  <div>
+                    <label for="paper-margin-toggle"
+                      >Paper Margin:
+                      <span aria-label="paper margin status" class="status"
+                        >on</span
+                      >
+                    </label>
+                    <label class="switch-toggle outer">
+                      <input
+                        aria-checked="true"
+                        checked
+                        aria-label="Paper Margin Button"
+                        id="paper-margin-toggle"
+                        type="checkbox"
+                      />
+                      <div></div>
+                    </label>
+                  </div>
+
+                  <div>
+                    <label for="paper-line-toggle"
+                      >Paper Lines:
+                      <span aria-label="paper line status" class="status"
+                        >on</span
+                      >
+                    </label>
+                    <label class="switch-toggle outer">
+                      <input
+                        aria-checked="true"
+                        checked
+                        aria-label="Paper Line Button"
+                        id="paper-line-toggle"
+                        type="checkbox"
+                      />
+                      <div></div>
+                    </label>
+                  </div>
+                  <div class="experimental" style="display: none;">
+                    <label for="paper-curve-toggle"
+                      >Paper Curve:
+                      <span aria-label="paper curve status" class="status"
+                        >off</span
+                      >
+                    </label>
+                    <label
+                      title="Paper Curve (Yet to be implemented)"
+                      class="switch-toggle outer"
+                      style="cursor: not-allowed !important;">
+                      <input
+                        aria-checked="false"
+                        aria-label="Paper Curve Button"
+                        id="paper-curve-toggle"
+                        type="checkbox"/>
+                      <div></div>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
               <!-- Pen ink color, Font size, Vertical position text, Word Spacing -->
               <fieldset class="glass-ui">
                 <legend>Page & Text Options</legend>
@@ -288,77 +352,13 @@
                 </div>
               </fieldset>
 
-              <!-- Letter spacing, Paper Margin, Paper Lines, Paper Curvature -->
-              <fieldset class="glass-ui">
-                <legend>Margin & Line Options</legend>
-
-                <div class="category-grid">
-                  <div>
-                    <label for="paper-margin-toggle"
-                      >Paper Margin:
-                      <span aria-label="paper margin status" class="status"
-                        >on</span
-                      >
-                    </label>
-                    <label class="switch-toggle outer">
-                      <input
-                        aria-checked="true"
-                        checked
-                        aria-label="Paper Margin Button"
-                        id="paper-margin-toggle"
-                        type="checkbox"
-                      />
-                      <div></div>
-                    </label>
-                  </div>
-
-                  <div>
-                    <label for="paper-line-toggle"
-                      >Paper Lines:
-                      <span aria-label="paper line status" class="status"
-                        >on</span
-                      >
-                    </label>
-                    <label class="switch-toggle outer">
-                      <input
-                        aria-checked="true"
-                        checked
-                        aria-label="Paper Line Button"
-                        id="paper-line-toggle"
-                        type="checkbox"
-                      />
-                      <div></div>
-                    </label>
-                  </div>
-                  <div class="experimental" style="display: none;">
-                    <label for="paper-curve-toggle"
-                      >Paper Curve:
-                      <span aria-label="paper curve status" class="status"
-                        >off</span
-                      >
-                    </label>
-                    <label
-                      title="Paper Curve (Yet to be implemented)"
-                      class="switch-toggle outer"
-                      style="cursor: not-allowed !important;">
-                      <input
-                        aria-checked="false"
-                        aria-label="Paper Curve Button"
-                        id="paper-curve-toggle"
-                        type="checkbox"/>
-                      <div></div>
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-
               <!-- GENERATE IMAGE BUTTONS -->
               <div style="text-align: center; padding: 30px 0px;">
                 <button
                   type="submit"
                   data-testid="generate-image-button"
                   class="button generate-image-button"
-                  onclick="showHostory()">
+                  onclick="showHistory()">
                 Create Notes
                 </button>
               </div>
@@ -384,7 +384,7 @@
       History
     </div>
     <script>
-        function showHostory(){
+        function showHistory(){
           let text = document.getElementById('note').textContent;
           let history = document.getElementById('history');
           history.innerHTML = text;

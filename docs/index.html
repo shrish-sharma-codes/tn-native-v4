@@ -220,10 +220,61 @@
               </fieldset>
 
               <!-- Letter spacing, Paper Margin, Paper Lines, Paper Curvature -->
-              <fieldset class="glass-ui">
+              <!-- <fieldset class="glass-ui">
                 <legend>Margin & Line Options</legend>
 
                 <div class="category-grid">
+                  
+                </div>
+              </fieldset> -->
+
+              <!-- Pen ink color, Font size, Vertical position text, Word Spacing -->
+              <fieldset class="glass-ui">
+                <legend>Page & Margin Settings</legend>
+
+                <div class="category-grid">
+                  <div class="postfix-input" data-postfix="pt">
+                    <label for="font-size">Font Size</label>
+                    <input
+                      id="font-size"
+                      min="0"
+                      step="0.5"
+                      value="10"
+                      type="number"
+                    />
+                  </div>
+                  <div>
+                    <label class="block" for="ink-color">Ink Color</label>
+                    <select id="ink-color">
+                      <option default value="#000f55">Blue</option>
+                      <option value="black">Black</option>
+                      <option value="#ba3807">Red</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block" for="page-size">Page Size</label>
+                    <select id="page-size">
+                      <option default value="a4">A4 &nbsp;</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block" for="page-effects">Effects</label>
+                    <select id="page-effects">
+                      <option default value="shadows">Shadows</option>
+                      <option value="scanner">Scanner</option>
+                      <option value="no-effect">No Effect</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block" for="resolution">Resolution</label>
+                    <select id="resolution">
+                      <option value="0.8">Very Low</option>
+                      <option value="1">Low</option>
+                      <option selected value="2">Normal</option>
+                      <option value="3">High</option>
+                      <option value="4">Very High</option>
+                    </select>
+                  </div>
                   <div>
                     <label for="paper-margin-toggle"
                       >Paper Margin:
@@ -279,56 +330,6 @@
                         type="checkbox"/>
                       <div></div>
                     </label>
-                  </div>
-                </div>
-              </fieldset>
-
-              <!-- Pen ink color, Font size, Vertical position text, Word Spacing -->
-              <fieldset class="glass-ui">
-                <legend>Page & Text Options</legend>
-
-                <div class="category-grid">
-                  <div class="postfix-input" data-postfix="pt">
-                    <label for="font-size">Font Size</label>
-                    <input
-                      id="font-size"
-                      min="0"
-                      step="0.5"
-                      value="10"
-                      type="number"
-                    />
-                  </div>
-                  <div>
-                    <label class="block" for="ink-color">Ink Color</label>
-                    <select id="ink-color">
-                      <option default value="#000f55">Blue</option>
-                      <option value="black">Black</option>
-                      <option value="#ba3807">Red</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label class="block" for="page-size">Page Size</label>
-                    <select id="page-size">
-                      <option default value="a4">A4 &nbsp;</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label class="block" for="page-effects">Effects</label>
-                    <select id="page-effects">
-                      <option default value="shadows">Shadows</option>
-                      <option value="scanner">Scanner</option>
-                      <option value="no-effect">No Effect</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label class="block" for="resolution">Resolution</label>
-                    <select id="resolution">
-                      <option value="0.8">Very Low</option>
-                      <option value="1">Low</option>
-                      <option selected value="2">Normal</option>
-                      <option value="3">High</option>
-                      <option value="4">Very High</option>
-                    </select>
                   </div>
                 </div>
               </fieldset>

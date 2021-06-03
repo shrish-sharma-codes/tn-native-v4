@@ -4,7 +4,7 @@ body {
   --font-color-primary: #fff;
   --elevation-background: #5fc3e4;
   --link-color: #006eb8; */
-  --background-primary: linear-gradient(to bottom, #654ea3, #eaafc8); 
+  --background-primary: linear-gradient(to bottom, #000000, #11030a, #190616, #1c0b21, #19112e); 
   --font-color-primary: #fff;
   --elevation-background: #454545;
   --link-color: #09f;
@@ -29,7 +29,7 @@ body {
   --toggle-bg: #454545;
 }
 body.dark {
-  --background-primary: linear-gradient(to bottom, #654ea3, #eaafc8); 
+  --background-primary: linear-gradient(to bottom, #000000, #11030a, #190616, #1c0b21, #19112e); 
   --font-color-primary: #fff;
   --elevation-background: #454545;
   --link-color: #09f;
